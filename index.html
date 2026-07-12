@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIRI IT Solutions</title>
+  <style>
+    /* Reset & base styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+  
+    /* Layout */
+    header { background: #1a2a6c; color: #fff; padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+    header nav { display: flex; justify-content: space-between; align-items: center; }
+    header nav ul { display: flex; list-style: none; }
+    header nav li { margin-left: 1.5rem; }
+    header nav a { font-weight: bold; }
+
+    main { padding-top: 80px; }
+
+    section { padding: 3rem 2rem; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    /* Hero */
+    #hero { background: #1982c4; color: #fff; text-align: center; }
+    #hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    #hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+    .btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 4px; }
+    .btn-primary { background: #1a2a6c; color: #fff; }
+    .btn-secondary { background: #fff; color: #1982c4; margin-left: 0.5rem; }
+
+    /* About / Leadership */
+    #leadership .profile { text-align: center; }
+    #leadership h2 { margin-bottom: 0.5rem; }
+    #leadership p { font-style: italic; color: #555; }
+
+    /* Services */
+    #services .service-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+    .service-item { background: #f9f9f9; padding: 1.5rem; border-radius: 4px; }
+    .service-item h3 { margin-bottom: 0.75rem; }
+
+    /* Why Choose Us */
+    #why ul { list-style: disc inside; }
+
+    /* Contact */
+    #contact form { display: grid; gap: 1rem; }
+    #contact input, #contact textarea { padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; width: 100%; }
+    #contact button { width: 150px; align-self: flex-start; }
+
+    /* Footer */
+    footer { background: #1a2a6c; color: #fff; text-align: center; padding: 1rem 2rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="container">
+ <img src="images/logo.png" alt="SIRI IT SOLUTIONS Logo" width="100">
+      <div class="logo">SIRI IT SOLUTIONS</div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#leadership">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <div class="container">
+          <h1>Empowering Digital Transformation</h1>
+        <p>Innovative IT solutions for a smarter tomorrow.</p>
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <a href="#services" class="btn btn-secondary">Our Services</a>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <div class="container profile">
+        <h2>Srinivas P</h2>
+        <p>C.E.O</p>
+        <p>SIRI IT SOLUTIONS is headquartered in Hyderabad under esteemed leadership of Srinivas P, focusing on scalable, secure, and future-ready IT services.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-list">
+          <div class="service-item">
+            <h3>SAP Solutions</h3>
+            <p>EWM,ERP, S/4HANA, Cloud Integration, AMS support Projects</p>
+          </div>
+          <div class="service-item">
+            <h3>Cloud Services</h3>
+            <p>AWS, Azure, Hybrid Deployments</p>
+          </div>
+          <div class="service-item">
+            <h3>Cybersecurity</h3>
+            <p>Risk Management, Compliance</p>
+          </div>
+          <div class="service-item">
+            <h3>IT Consulting</h3>
+            <p>Strategy, Architecture, Implementation</p>
+          </div>
+          <div class="service-item">
+            <h3>AI & Automation</h3>
+            <p>Smart Workflows, Predictive Analytics</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container">
+        <h2>Why Choose Us?</h2>
+        <ul>
+          <li>100+ successful deployments</li>
+          <li>Trusted by global clients</li>
+          <li>Based in Hyderabad, serving worldwide</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>405, PSR Prime Towers, Gachibowli, Hyderabad, Telangana 500032</p>
+        <p>GST No.: 36AOQPP0393F1ZM</p>
+        <p>🌐 <a href="http://www.siriits.com">www.siriits.com</a></p>
+        <p>✉️ <a href="mailto:info@siriit.com">info@siriit.com</a></p>
+        <p>📞 [+918985656694]</p>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 SIRI IT SOLUTIONS. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
