@@ -134,12 +134,85 @@
         <p>🌐 <a href="http://www.siriitsol.com">www.siriitsol.com</a></p>
         <p>✉️ <a href="mailto:info@siriitsol.com">info@siriitsol.com</a></p>
         <p>📞 [+918985656694]</p>
-        <form action="#" method="post">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn btn-primary">Send</button>
-        </form>
+        <section id="contact">
+  <h2>Contact Us</h2>
+  <p>405, PSR Prime Towers, Gachibowli, Hyderabad, Telangana 500032</p>
+  <p>GST: 36AQQPP0393F1ZMK</p>
+  <p>Website: www.siriitsol.com</p>
+  <p>Email: info@siriitsol.com</p>
+  <p>Phone: +918985656694</p>
+
+  <!-- Formspree Integration -->
+  <form action="https://formspree.io/f/yourFormID" method="POST">
+    <label>
+      Your Name:
+      <input type="text" name="name" required>
+    </label>
+    <label>
+      Your Email:
+      <input type="email" name="email" required>
+    </label>
+    <label>
+      Your Message:
+      <textarea name="message" required></textarea>
+    </label>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- Contact Form Styling -->
+<style>
+  #contact form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9; /* light background for contrast */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+
+  #contact form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  #contact form input,
+  #contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  #contact form input:focus,
+  #contact form textarea:focus {
+    border-color: #007BFF; /* blue highlight */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+  }
+
+  #contact form button {
+    background: #007BFF; /* your site’s blue */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  #contact form button:hover {
+    background: #0056b3; /* darker blue on hover */
+  }
+</style>
+
       </div>
     </section>
 
